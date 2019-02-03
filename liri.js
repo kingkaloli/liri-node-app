@@ -1,10 +1,11 @@
 
 require("dotenv").config();
 var keys = require("./keys");
+var axios = require("axios");
 
 
 var Spotify = require('node-spotify-api');
- 
+
 var spotify = new Spotify(keys.spotify);
  
 spotify.search({ type: 'track', query: 'The Sign Ace of Base.' }, function(err, data) {
@@ -30,16 +31,26 @@ console.log(album);
 
 });
 
+// http://www.omdbapi.com/?t=mr+nobody&apikey=[yourkey] //
 
+axios.get('http://www.omdbapi.com/', {
+    params: {
+      t:"mr nobody",
+      apikey: keys.omdb.id,
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+//   * Title of the movie.
+//   * Year the movie came out.
+//   * IMDB Rating of the movie.
+//   * Rotten Tomatoes Rating of the movie.
+//   * Country where the movie was produced.
+//   * Language of the movie.
+//   * Plot of the movie.
+//   * Actors in the movie.
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
-
-
-
-
-//  `concert-this`
-
-//  `spotify-this-song`
-
-//  `movie-this`
-
-//  `do-what-it-says`
