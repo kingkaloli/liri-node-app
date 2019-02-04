@@ -8,8 +8,6 @@ for (var i = 3; i < process.argv.length; i++) {
     query = query + process.argv[i] + " "
 
 }
-console.log(read);
-console.log(query);
 
 if (read === "spotify-this-song") {
     spotifySearch(query)
@@ -44,11 +42,11 @@ function spotifySearch(songName) {
         var artists = find.artists;
 
         for (var i = 0; i < artists.length; i++) {
-            console.log(artists[i].name);
+            console.log("Artist: " + artists[i].name);
         }
-        console.log(songname);
-        console.log(preview);
-        console.log(album);
+        console.log("Song Name: " + songname);
+        console.log("Preview this Album: " + preview);
+        console.log("Album Name:" + album);
 
 
 
