@@ -71,7 +71,7 @@ function omdbSearch(movieName) {
             }
         })
         .then(function (response) {
-            console.log(response);
+            
            
             // var movieFind= data.tracks.items[0];
             //   * Title of the movie.
@@ -87,10 +87,17 @@ function omdbSearch(movieName) {
             var movieRotten =  response.data.Ratings[2].Value;
                console.log("Rotten Tomatoes Rating: " + movieRotten);
             //   * Country where the movie was produced.
-          
+            var Country  =  response.data.Country
+            console.log("Countries movie was produced  : " + Country);
             //   * Language of the movie.
+            var Language  =  response.data.Language 
+            console.log("Language of the movie: " + Language);
             //   * Plot of the movie.
+            var Plot  =  response.data.Plot
+            console.log("Movie Plot: " + Plot);
             //   * Actors in the movie.
+            var Actors  =  response.data.Actors
+            console.log("Movie Actors: " + Actors);
         })
         .catch(function (error) {
             console.log(error);
