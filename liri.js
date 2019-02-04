@@ -72,11 +72,22 @@ function omdbSearch(movieName) {
         })
         .then(function (response) {
             console.log(response);
+           
+            // var movieFind= data.tracks.items[0];
             //   * Title of the movie.
+               var movieName =  response.data.Title
+               console.log("Movie Title: " + movieName);
             //   * Year the movie came out.
+               var movieReleased =  response.data.Year
+               console.log("Year Movie Released: " + movieReleased);
             //   * IMDB Rating of the movie.
+               var movieRated =  response.data.imdbRating
+               console.log("IMDB Rating : " + movieRated);
             //   * Rotten Tomatoes Rating of the movie.
+            var movieRotten =  response.data.Ratings[2];
+               console.log("Rotten Tomatoes Rating: " + movieRotten);
             //   * Country where the movie was produced.
+          
             //   * Language of the movie.
             //   * Plot of the movie.
             //   * Actors in the movie.
