@@ -84,7 +84,7 @@ function omdbSearch(movieName) {
                var movieRated =  response.data.imdbRating
                console.log("IMDB Rating : " + movieRated);
             //   * Rotten Tomatoes Rating of the movie.
-            var movieRotten =  response.data.Ratings[2];
+            var movieRotten =  response.data.Ratings[2].Value;
                console.log("Rotten Tomatoes Rating: " + movieRotten);
             //   * Country where the movie was produced.
           
