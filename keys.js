@@ -8,3 +8,7 @@ exports.spotify = {
 exports.omdb = {
   id: process.env.OMDBAPI,
 };
+
+exports.bandsintown = {
+  id: process.env.bandsintown,
+};
