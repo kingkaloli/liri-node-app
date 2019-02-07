@@ -44,7 +44,7 @@ function spotifySearch(songName) {
         for (var i = 0; i < artists.length; i++) {
             console.log("Artist: " + artists[i].name);
         }
-        
+     
         console.log("Song Name: " + songname);
         console.log("Preview this Album: " + preview);
         console.log("Album Name:" + album);
