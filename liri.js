@@ -107,26 +107,35 @@ function omdbSearch(movieName) {
         });
 }
 
-//  Format output for movie this 
-
-// Create bands in-town API with axios
-
-// use query to input var like others 
-
-// var queryUrl = "https://rest.bandsintown.com/artists/" + artName + "/events?app_id=codingbootcamp";
-
-// console.log(queryUrl);
-
-// use axios to connect to URL //
-
-// axios.get(queryUrl).then(
-//   function(response) {
-//     console.log(response);
+// function concertThis(media){
+   
+//     if (media == ""){
+//     media = "Hinder"
 //   }
-// );
-        
-// create if and else within the right fuction for user input, get this working first. 
 
-// Read from random.txt
-
-//
+  
+//   request ("https://rest.bandsintown.com/artists/" + media + "/events?app_id=codingbootcamp", function (error, response, data){
+//     try{
+//       var response = JSON.parse(data)
+//       if (response.length != 0){
+//         console.log(colors.cyan (" Upcoming events for " + media + " include: "))
+//         response.forEach(function(element){
+//           console.log (colors.magenta("Venue: " + element.venue.name));
+//         if (element.venue.country == "United States"){
+//           console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.region));
+//         }
+//           else{
+//             console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.country));
+//           }
+//         console.log(colors.magenta(" Date: " + moment(element.datetime).format("MM/DD/YYYY")));
+//         console.log();
+//         })
+//       }else {
+//         console.log(colors.red(" You didn't need to go anyway."));
+//       }
+//     }
+//     catch(error){
+//       console.log(colors.red("No concerts for you!"));
+//     }
+//   })
+//   }
