@@ -110,7 +110,7 @@ function omdbSearch(movieName) {
 // function concertThis(media){
    
 //     if (media == ""){
-//     media = "Hinder"
+//    
 //   }
 
   
@@ -118,24 +118,24 @@ function omdbSearch(movieName) {
 //     try{
 //       var response = JSON.parse(data)
 //       if (response.length != 0){
-//         console.log(colors.cyan (" Upcoming events for " + media + " include: "))
+//         console.log(" Upcoming events for " + media + " include: "))
 //         response.forEach(function(element){
-//           console.log (colors.magenta("Venue: " + element.venue.name));
+//           console.log ("Venue: " + element.venue.name));
 //         if (element.venue.country == "United States"){
-//           console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.region));
+//           console.log(" City: " + element.venue.city + "," + element.venue.region));
 //         }
 //           else{
-//             console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.country));
+//             console.log(" City: " + element.venue.city + "," + element.venue.country));
 //           }
-//         console.log(colors.magenta(" Date: " + moment(element.datetime).format("MM/DD/YYYY")));
+//         console.log(" Date: " + moment(element.datetime).format("MM/DD/YYYY")));
 //         console.log();
 //         })
 //       }else {
-//         console.log(colors.red(" You didn't need to go anyway."));
+//         console.log(" You didn't need to go anyway."));
 //       }
 //     }
 //     catch(error){
-//       console.log(colors.red("No concerts for you!"));
+//       console.log("No concerts for you!"));
 //     }
 //   })
 //   }
