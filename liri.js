@@ -131,11 +131,26 @@ function omdbSearch(movieName) {
 //         console.log();
 //         })
 //       }else {
-//         console.log(" You didn't need to go anyway."));
+//         console.log(""));
 //       }
 //     }
 //     catch(error){
-//       console.log("No concerts for you!"));
+//       console.log(""));
 //     }
 //   })
 //   }
+// fs.appendFile("log.txt",
+//        "\nSong Name: " +song.name +
+//        "\nArtist: " + song.artists[i] +
+//        "\nAlbum: " + song.album.name +
+//        "\nPreview Link: " + song.preview_url, function (err){
+//          if (err){
+//            console.log(err);
+//          }
+//        } );
+
+//      }else {
+//          console.log("\nNo songs found for ".underline.cyan);
+//          logToFile("\nNo shows found for " .underline.cyan);
+//          };
+//        })
