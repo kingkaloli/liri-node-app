@@ -107,10 +107,17 @@ function omdbSearch(movieName) {
         });
 }
 
-// artName = "";
+//  Format output for movie this 
+
+// Create bands in-town API with axios
+
+// use query to input var like others 
+
 // var queryUrl = "https://rest.bandsintown.com/artists/" + artName + "/events?app_id=codingbootcamp";
 
 // console.log(queryUrl);
+
+// use axios to connect to URL //
 
 // axios.get(queryUrl).then(
 //   function(response) {
@@ -118,9 +125,8 @@ function omdbSearch(movieName) {
 //   }
 // );
         
-    
-//  Format output for movie this 
-
-//  API call for Bands near me 
+// create if and else within the right fuction for user input, get this working first. 
 
 // Read from random.txt
+
+//
